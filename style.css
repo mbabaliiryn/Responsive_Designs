@@ -1,49 +1,55 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .first-section {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.3rem;
-    background-color: rgb(19, 19, 19);
-    padding: 15px 0; 
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  background-color: rgb(19, 19, 19);
+  padding: 10px 0; 
 }
 
 .first-list {
   display: flex;
-  width: 40%;
-  justify-content: space-evenly;
-  color: #aaa; 
+  width: 27%;
+  justify-content: space-between;
+  padding-left: 20px;
+  color: #aaa;
 }
 
 .first-list li:hover {
-    cursor: pointer;
-    color:#fff;
+  cursor: pointer;
+  color:#fff;
 }
 
 .second-list {
   display: flex;
-  width: 30%;
-  justify-content: space-evenly;
-  color:#aaa;
+  width: 17%;
+  justify-content: space-between;
+  padding-right: 20px;
+  color: #aaa;
 }
 
 .second-list li:hover {
-    cursor: pointer;
-    color: #fff;
+  cursor: pointer;
+  color: #fff;
 }
 
-
 .second-section {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;    
 }
 
 .third-list {
   display: flex;
-  width: 40%;
-  justify-content: space-evenly;
+  width: 33%;
+  justify-content: space-between;
+  margin-left: 20px;
   color: #aaa;
-  padding: 18px 0;
+  padding: 19px 0;
+  text-transform: uppercase;
 }
 
 .third-list li:hover{
@@ -51,20 +57,23 @@
   color: rgb(19, 19, 19);
 }
 
-#search-icon {
-  margin-right: 20px;
-  border-left: 1px solid #aaa;
-  padding-left: 40px;
-  padding-top: 20px; 
+.second-section #search-icon {
+  border-left: 1px solid rgb(235, 231, 231);
+  padding: 17px;
+  color: #aaa; 
+}
+
+#search-icon .fa-search {
+  font-size: 17px;
 }
 
 .third-section {
-    background-color: rgb(252, 252, 16);
-    padding: 15px 0;
+  background-color: #FFDD33;
+  padding: 10px 20px;
 }
-p {
-    font-size: 1.3rem;
+.third-section .announcement {
+  font-size: 0.8rem;
 }
-p:hover {
-    cursor: pointer;
+.third-section .announcement:hover {
+  cursor: pointer;
 }
