@@ -100,6 +100,7 @@ body {
 
 .featured-articles {
   margin: 2px 10px;
+  height: 70vh;
 }
 
 .featured-articles .article-big {
@@ -109,6 +110,7 @@ body {
   float: left;
   color: #fff;
   position: relative;
+  height: 100%;
 }
 
 /* .featured-articles .gradient {
@@ -131,7 +133,9 @@ body {
 }
 
 .featured-articles .content {
-  margin: 120px 20px 20px 20px;
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
 }
 
 .content .category {
@@ -159,20 +163,94 @@ body {
 }
 
 .article-aside {
+  position: relative;
   float: right;
   width: 31.3%;
   color: #fff;
+  height: 49.2%;
 }
 
 .featured-articles .article1 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Snag_16e7896-796x419-796x419.png") no-repeat;
+  background-size: cover;
 }
 
 .featured-articles .article2 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Cornavirus-796x418.jpg")  no-repeat;
+  background-size: cover;
   margin-top: 10px;
 }
 
-.article-aside .content {
-  margin-top: 115.5px;
+main .container {
+  padding: 6rem 8.5rem;
+}
+
+.container .heading {
+  font-size: 1.7rem;
+  color: #f42;
+}
+
+.container .heading:hover {
+  color: black;
+}
+
+.heading i {
+  font-size: 1.2rem;
+}
+
+.container .latest-news {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+  margin-top: 20px;
+}
+
+.latest-news .news {
+  width: 23%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.news img {
+  width: 100%;
+  height: 135px;
+}
+
+.news h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.news p {
+  color: #aaa;
+  font-size: 0.89rem;
+  font-weight: 500;
+}
+
+.news p a:hover {
+  color: #555;
+}
+
+.latest-funding .funding-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.funding-heading .deals {
+  align-self: center;
+  font-weight: bold;
+}
+
+.deals a {
+  padding: 0px 7px;
+  color: #f42;
+}
+
+.deals a:hover {
+  color: black;
+}
+
+.deals .link {
+  border-right: 1px solid #f42;
 }
