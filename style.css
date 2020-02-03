@@ -103,6 +103,11 @@ body {
   height: 70vh;
 }
 
+.featured-articles svg {
+  width: 20px;
+  height: 10px;
+}
+
 .featured-articles .article-big {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Copy-of-Copy-of-Copy-of-Copy-of-...-4-796x417.png") no-repeat;
   background-size: cover;
@@ -188,6 +193,7 @@ main .container {
 .container .heading {
   font-size: 1.7rem;
   color: #f42;
+  padding-left: 1rem;
 }
 
 .container .heading:hover {
@@ -206,14 +212,13 @@ main .container {
 }
 
 .latest-news .news {
-  width: 23%;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  max-width: 25%;
+  padding: 1rem;
 }
 
 .news img {
   width: 100%;
-  height: 135px;
+  height: 60%;
 }
 
 .news h3 {
