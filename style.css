@@ -1,5 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .first-section {
@@ -16,6 +32,10 @@ body {
   justify-content: space-between;
   padding-left: 20px;
   color: #aaa;
+}
+
+.first-list li:first-child {
+  color:#fff;
 }
 
 .first-list li:hover {
@@ -39,10 +59,11 @@ body {
 .second-section {
   display: flex;
   justify-content: space-between;
-  font-size: 0.8rem;    
+  font-size: 0.91rem;    
 }
 
 .third-list {
+  font-family: 'Roboto Condensed', sans-serif;
   display: flex;
   width: 33%;
   justify-content: space-between;
@@ -70,10 +91,88 @@ body {
 .third-section {
   background-color: #FFDD33;
   padding: 10px 20px;
-}
-.third-section .announcement {
+  cursor: pointer;
   font-size: 0.8rem;
 }
-.third-section .announcement:hover {
-  cursor: pointer;
+.third-section .announcement {
+  color: black;
+}
+
+.featured-articles {
+  margin: 2px 10px;
+}
+
+.featured-articles .article-big {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Copy-of-Copy-of-Copy-of-Copy-of-...-4-796x417.png") no-repeat;
+  background-size: cover;
+  width: 68%;
+  float: left;
+  color: #fff;
+  position: relative;
+}
+
+/* .featured-articles .gradient {
+  background-image: linear-gradient(45deg,#FF420A, #000000);
+  width: 100%;
+  height: 100%;
+} */
+
+.article-big #logo {
+  width: 471px;
+  height: 112px;
+  margin: 20px;
+}
+
+.article-big .date {
+  position: absolute;
+  right: 17px;
+  top: 14px;
+  font-size: 0.95rem;
+}
+
+.featured-articles .content {
+  margin: 120px 20px 20px 20px;
+}
+
+.content .category {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9rem;
+}
+
+.content h1 {
+  font-size: 3.95rem;
+  font-weight: bold;
+  line-height: 55px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.content .author,
+.content .time {
+  color: #ffffff99;
+  font-size: 0.8rem;
+}
+
+.content .author a:hover {
+  color: #fff;
+}
+
+.article-aside {
+  float: right;
+  width: 31.3%;
+  color: #fff;
+}
+
+.featured-articles .article1 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Snag_16e7896-796x419-796x419.png") no-repeat;
+}
+
+.featured-articles .article2 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/Cornavirus-796x418.jpg")  no-repeat;
+  margin-top: 10px;
+}
+
+.article-aside .content {
+  margin-top: 115.5px;
 }

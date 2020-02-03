@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/6887534a1e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -15,8 +15,8 @@
         <nav class="first-section">
             <ul class="first-list">
                 <li>News</li>
-                <li>Events</li>
-                <li>Businesses</li>
+                <li>Events <i class="fas fa-caret-down fa-xs"></i></li>
+                <li>Businesses <i class="fas fa-caret-down fa-xs"></i></li>
                 <li>AMAs</li>
                 <li>Spaces</li>
                 <li>Terms & Conditions</li>
@@ -25,7 +25,7 @@
                 <li>About</li>
                 <li>Team</li>
                 <li>Advertise</li>
-                <li>JObs</li>
+                <li>Jobs</li>
                 <li>Contact</li>
 
             </ul>
@@ -37,7 +37,8 @@
                 <li>Hard Fork</li>
                 <li>PLugged</li>
                 <li>Fundamentals</li>
-                <li>WORK 2030</li>
+                <li>Work 2030</li>
+                <li>Readme</li>
             </ul>
             <div id="search-icon">
                 <i class="fas fa-search"></i>
@@ -45,8 +46,42 @@
 
         </nav>
         <nav class="third-section">
-            <p class="announcement"> Our tech festival is coming up in June. Get tickets now →	</p>
+            <a href="#" class="announcement"> Our tech festival is coming up in June. Get tickets now →	</a>
         </nav>
-    </header>    
+    </header>
+
+    <main>
+        <section class="featured-articles">
+            <article class="article-big">
+                <!-- <div class="gradient"></div> -->
+                <img id="logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="logo">
+                <span class="date">Monday — February 3, 2020</span>
+                <div class="content">
+                    <span class="category">World</span>
+                    <h1>Scientists believe the key to reaching zero emissions is understanding behavior</h1>
+                    <span class="author">by <a href="#">The Conversation</a></span>&nbsp;&nbsp;
+                    <span class="time"><i class="far fa-clock"></i> 12 hours ago 5</span>
+                </div>
+            </article>
+
+            <article class="article-aside article1">
+                <div class="content">
+                    <span class="category">World</span>
+                    <h2>How scientists discovered a math equation in rat whiskers</h2>
+                    <span class="author">by <a href="#">The Conversation</a></span>&nbsp;&nbsp;
+                    <span class="time"><i class="far fa-clock"></i> 20 hours ago 3</span>
+                </div>
+            </article>
+
+            <article class="article-aside article2">
+                <div class="content">
+                    <span class="category">World</span>
+                    <h2>‘Freezing’ our bodies is the key to long-distance space travel — but can we do it?</h2>
+                    <span class="author">by <a href="#">The Cosmic Companion</a></span>&nbsp;&nbsp;
+                    <span class="time"><i class="far fa-clock"></i> 1 day ago 6</span>
+                </div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
