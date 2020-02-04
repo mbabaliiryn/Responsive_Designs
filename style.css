@@ -459,3 +459,65 @@ main .container {
   width: 1em;
   margin-left: -1em;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+
+}
+
+.nav h1 {
+  font-size: 2rem;
+  color: #f42;
+  position: relative;
+  left: -352px;
+}
+
+.nav a {
+  color: #f42;
+  font-size: 1.5rem;
+  position: relative;
+  right: -354px;
+}
+
+.latest-info {
+  width: 25%;
+  height: 400px;
+  padding: 20px 20px 70px 20px;
+  
+}
+
+.img {
+  width: 100%;
+  max-width: 100%;
+  height: 80%;
+}
+
+.image-title {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+}
+
+.image-title:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.latest-image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dollar {
+  font-size: 1.7rem;
+  color: #777777;
+}
+
+.dollar span {
+  text-decoration: line-through;
+  font-size: 1.5rem;
+}
+
