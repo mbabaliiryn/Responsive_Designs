@@ -143,7 +143,7 @@ body {
   margin: 20px;
 }
 
-.content .category {
+.content .article-category {
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 0.9rem;
@@ -227,6 +227,11 @@ main .container {
   margin: 5px 0;
 }
 
+.news h3:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
 .news p {
   color: #aaa;
   font-size: 0.89rem;
@@ -258,4 +263,76 @@ main .container {
 
 .deals .link {
   border-right: 1px solid #f42;
+}
+
+.latest-funding .funding-container {
+  display: flex;  
+}
+
+.funding-container .funding {
+  max-width: 23%;
+  margin: 12px;
+  background-color: #FFFAF8;
+}
+
+.company img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin: 10px;
+}
+
+.company .name {
+  color: #fff;
+  font-weight: bold;
+  background-color: #FF4422;
+  padding: 10px;
+}
+
+.company .amount {
+  background-color: #FFEBE7;
+  padding: 8px;
+}
+
+.amount h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.amount p {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.568);
+}
+
+.funding .benefits,
+.funding .story {
+  padding: 20px;
+  color: #555;
+}
+
+.funding .benefits {
+  font-size: 0.89rem;
+}
+
+.benefits ul li{
+  padding-bottom: 10px;
+}
+
+.benefits i {
+  padding-right: 10px;
+  color: black;
+  font-size: 1rem;
+}
+
+.funding .story {
+  flex-grow: 1;
+  border-top: 1px solid rgba(255,68,34,.25);
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+
+.story span {
+  color: #aaa;
 }
