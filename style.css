@@ -206,6 +206,7 @@ main .gradient.dark {
 
 main .container {
   padding: 6rem 8.5rem;
+
 }
 
 .container .heading {
@@ -267,7 +268,7 @@ main .container {
 
 .funding-heading .deals {
   align-self: center;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .deals a {
@@ -469,6 +470,10 @@ main .container {
   color: #777777;
 }
 
+.list li:hover {
+  color: #000;
+}
+
 .list li::before {
   content: "\2022";
   color: #f42;
@@ -615,3 +620,221 @@ footer .legal {
 .legal img {
   height: 9px;
 }
+
+@media only screen and (min-width:1440px) {
+  .first-section {
+    font-size: 1.3rem;
+  }
+
+  .first-list {
+    width: 32%;  
+  }
+
+  .second-list {
+    width: 20%;
+  }
+
+  .second-section {
+    font-size: 1.4rem;
+  }
+
+  .third-list {
+    width: 40%;
+  }
+
+  #search-icon .fa-search {
+    font-size: 25px;
+    
+  }
+
+  .third-section {
+    font-size: 1.2rem;
+  }
+
+  .article-big .date {
+    font-size: 1.4rem;
+  }
+
+  .content .article-category {
+    font-size: 1.4rem;
+  }
+
+  .content h1 {
+    font-size: 6.5rem;
+    line-height: 100px;
+  }
+
+  .content .author,
+  .content .time {
+    font-size: 1.2rem;
+  }
+
+  .featured-articles svg {
+    width: 30px;
+    height: 20px;
+  }
+
+  .content h2 {
+    font-size: 2.5rem;
+  }
+
+  .container .heading {
+    font-size: 2.5rem;
+  } 
+
+  .heading i {
+    font-size: 1.8rem;
+  }
+
+  .news h3 {
+    font-size: 1.5rem;
+  }
+
+  .news p {
+    font-size: 1.3rem;
+  }
+
+  .deals a {
+    font-size: 1.5rem;
+  }
+  .company .name {
+    font-size: 1.7rem;
+  }
+
+  .company img {
+    height: 80px;
+    width: 80px;
+    margin: 15px;
+  }
+
+  .amount h4 {
+    font-size: 1.5rem;
+  }
+  
+  .amount p {
+    font-size: 1.2rem;
+  }
+
+  .company .amount {
+    padding: 18px;
+  }
+
+  .funding .benefits {
+    font-size: 1.3rem;
+  }
+
+  .benefits i {
+    font-size: 1.5rem;
+  }
+
+  .funding .story {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+
+  .latest-funding .funding-heading {
+    padding-right: 40px;
+  }
+
+  .category-container .category {
+    height: 950px;
+  }
+
+  .popular .content h2 {
+    font-size: 2rem;
+  }
+
+  .category .popular {
+    height: 38%;
+  }
+
+  .latest p {
+    font-size: 1.2rem;
+  }
+
+  .latest h4 {
+    font-size: 1.3rem;
+    padding-right: 150px;
+  }
+
+  .latest img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .category .latest {
+    height: 140px;
+  }
+
+  .list li {
+    font-size: 1.4rem;
+  }
+
+  .see-all {
+    font-size: 1.5rem;
+  }
+
+  .latest-info .img {
+    height: 80%;
+  }
+
+  .latest-info .image-title {
+    font-size: 1.4rem;
+  }
+
+  .latest-info .dollar {
+    font-size: 1.5rem;
+  }
+
+  .dollar span {
+    font-size: 1.3rem;
+  }
+
+  .latest-image-container .latest-info {
+    padding: 20px 20px 30px 20px;
+  }
+
+  .latest-info .discount {
+    top: 20px;
+    right: 20px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .discount p {
+    font-size: 1.2rem;
+    margin: 35px -15px 0px 26px;
+  }
+
+  .social i {
+    font-size: 1.5rem;
+  }
+
+  .social a {
+    width: 65px;
+    height: 65px;
+    padding: 18px;
+    margin: 0 10px;
+  }
+
+  .footer-links .menu {
+    font-size: 1.3rem;
+  }
+
+  footer .footer-links {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  footer .legal {
+    font-size: 1.3rem;
+  }
+
+  .legal img {
+    height: 12px;
+  }
+
+  
+
+}
+    
