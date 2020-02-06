@@ -18,23 +18,23 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-header #tab-logo {
+header .tab-logo {
   display: none;
 }
 
-.mobile-nav {
+header .mobile-nav {
   display: none;
 }
 
-.first-section {
+header .first-section {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem;
   background-color: rgb(19, 19, 19);
-  padding: 8px 0; 
+  padding: 8px 0;
 }
 
-.first-list {
+.first-section .first-list {
   display: flex;
   padding-left: 20px;
   justify-content: space-evenly;
@@ -45,60 +45,39 @@ header #tab-logo {
   padding-left: 15px;
 }
 
-.first-list li:first-child {
-  color:#fff;
+.first-section .highlighted:first-child {
+  color: #fff;
   padding-left: 0;
 }
 
-.first-list li:hover {
-  cursor: pointer;
-  color:#fff;
-}
-
-.second-list {
+.first-section .second-list {
   display: flex;
   justify-content: space-evenly;
   padding-right: 20px;
   color: #aaa;
 }
 
-.second-list li {  
+.second-list li {
   padding-left: 15px;
 }
 
-.second-list li:hover {
-  cursor: pointer;
-  color: #fff;
-}
-
-.second-section {
+header .second-section {
   display: flex;
   justify-content: space-between;
-  font-size: 0.91rem;    
+  font-size: 0.91rem;
 }
 
 .second-section #search-icon {
   border-left: 1px solid rgb(235, 231, 231);
   padding: 17px;
-  color: #aaa; 
+  color: #aaa;
 }
 
 #search-icon .fa-search {
   font-size: 17px;
 }
 
-.third-section {
-  background-color: #FFDD33;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 0.8rem;
-}
-
-.third-section .announcement {
-  color: black;
-}
-
-.third-list {
+.second-section .third-list {
   font-family: 'Roboto Condensed', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -112,9 +91,25 @@ header #tab-logo {
   padding-right: 15px;
 }
 
-.third-list li:hover{
+.first-section .first-list li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.second-section .third-list li:hover {
   cursor: pointer;
   color: rgb(19, 19, 19);
+}
+
+header .third-section {
+  background-color: #fd3;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.third-section .announcement {
+  color: black;
 }
 
 main .gradient {
@@ -127,7 +122,7 @@ main .gradient {
 }
 
 main .gradient.main {
-  background: linear-gradient(170deg, rgba(255,66,10,1) 6%, rgba(0,0,0,1) 84%);
+  background: linear-gradient(170deg, red 6%, rgba(0, 0, 0, 1) 84%);
 }
 
 main .gradient.dark {
@@ -194,15 +189,15 @@ main .gradient.dark {
 .content .author,
 .content .time {
   position: relative;
-  color: #ffffff99;
+  color: #fff9;
   font-size: 0.8rem;
 }
 
-.content .author a:hover {
+.author a:hover {
   color: #fff;
 }
 
-.article-aside {
+.featured-articles .article-aside {
   position: relative;
   float: right;
   width: 31.3%;
@@ -211,7 +206,7 @@ main .gradient.dark {
 }
 
 .featured-articles .article1 {
-  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/01/Snag_16e7896-796x419-796x419.png") no-repeat;
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/growth_quarters-announcement-796x417.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -227,10 +222,11 @@ main .container {
   padding: 0 20px;
 }
 
-.container .heading {
+.container h2.heading {
   font-size: 1.7rem;
   color: #f42;
   padding-left: 12px;
+  padding-bottom: 10px;
 }
 
 .container .heading:hover {
@@ -292,27 +288,27 @@ main .container {
   font-weight: 500;
 }
 
-.deals a {
-  padding: 0px 7px;
+.deals .link {
+  padding: 0 7px;
   color: #f42;
 }
 
-.deals a:hover {
+.deals .link:hover {
   color: black;
 }
 
-.deals .link {
+.deals .border {
   border-right: 1px solid #f42;
 }
 
 .latest-funding .funding-container {
-  display: flex;  
+  display: flex;
 }
 
 .funding-container .funding {
-  max-width: 25%;
-  padding: 12px;
-  background-color: #FFFAF8;
+  max-width: 23%;
+  margin: 1%;
+  background-color: #fffaf8;
 }
 
 .company img {
@@ -325,12 +321,12 @@ main .container {
 .company .name {
   color: #fff;
   font-weight: bold;
-  background-color: #FF4422;
+  background-color: #f42;
   padding: 10px;
 }
 
 .company .amount {
-  background-color: #FFEBE7;
+  background-color: #ffebe7;
   padding: 8px;
 }
 
@@ -356,7 +352,7 @@ main .container {
   font-size: 0.89rem;
 }
 
-.benefits ul li{
+.benefits .benefits-list {
   padding-bottom: 10px;
 }
 
@@ -368,7 +364,7 @@ main .container {
 
 .funding .story {
   flex-grow: 1;
-  border-top: 1px solid rgba(255,68,34,.25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
   font-size: 0.75rem;
   line-height: 18px;
 }
@@ -388,7 +384,7 @@ main .container {
   padding: 12px;
 }
 
-.category .heading {
+.category h2.heading {
   padding-left: 0;
   padding-bottom: 15px;
 }
@@ -472,6 +468,7 @@ main .container {
   text-transform: uppercase;
   font-size: 13px;
 }
+
 .latest h4 {
   padding: 1px 100px 12px 12px;
   font-size: 14px;
@@ -480,21 +477,21 @@ main .container {
 
 .popular h2:hover,
 .latest h4:hover {
-  text-decoration: underline;  
+  text-decoration: underline;
 }
 
-.list li {
+.list .list-item {
   padding: 6px 0 6px 14px;
   font-size: 14px;
   border-bottom: 1px solid #eee;
-  color: #777777;
+  color: #777;
 }
 
-.list li:hover {
+.list .list-item:hover {
   color: #000;
 }
 
-.list li::before {
+.list .list-item::before {
   content: "\2022";
   color: #f42;
   font-weight: bold;
@@ -517,12 +514,12 @@ main .container {
   font-weight: bold;
 }
 
-.see-all a {
-  padding: 0px 7px;
+.see-all .see-all-link {
+  padding: 0 7px;
   color: #f42;
 }
 
-.see-all a:hover {
+.see-all .see-all-link:hover {
   color: black;
 }
 
@@ -549,16 +546,15 @@ main .container {
   right: 12px;
   width: 80px;
   height: 80px;
-  background-image: linear-gradient(45deg, transparent 50%, #FFCC00 50%);
+  background-image: linear-gradient(45deg, transparent 50%, #fc0 50%);
 }
 
 .discount p {
   transform: rotate(45deg);
-  margin: 35px -30px 0px 15px;
+  margin: 35px -30px 0 15px;
   font-weight: bold;
   font-size: 15px;
 }
-
 
 .latest-info .image-title {
   font-size: 1rem;
@@ -574,7 +570,7 @@ main .container {
 
 .latest-info .dollar {
   font-size: 1.05rem;
-  color: #777777;
+  color: #777;
 }
 
 .dollar span {
@@ -595,7 +591,7 @@ footer .footer-links {
   margin-bottom: 3rem;
 }
 
-.social a {
+.social .social-link {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -606,7 +602,7 @@ footer .footer-links {
   border: 2px solid #333;
 }
 
-.social a:hover {
+.social .social-link:hover {
   background-color: #000;
 }
 
@@ -617,11 +613,11 @@ footer .footer-links {
   font-size: 13.5px;
 }
 
-.menu a {
+.menu .menu-link {
   margin: 0 7px;
 }
 
-.menu a:hover {
+.menu .menu-link:hover {
   color: #fff;
 }
 
@@ -644,32 +640,31 @@ footer .legal {
 /* Styles for larger desktop screens */
 
 @media only screen and (min-width: 1600px) {
-  .first-section {
+  header .first-section {
     font-size: 1.3rem;
   }
 
-  .first-list {
-    width: 32%;  
+  .first-section .first-list {
+    width: 32%;
   }
 
-  .second-list {
+  .first-section .second-list {
     width: 20%;
   }
 
-  .second-section {
+  header .second-section {
     font-size: 1.4rem;
   }
 
-  .third-list {
+  .second-section .third-list {
     width: 40%;
   }
 
   #search-icon .fa-search {
     font-size: 25px;
-    
   }
 
-  .third-section {
+  header .third-section {
     font-size: 1.2rem;
   }
 
@@ -696,13 +691,9 @@ footer .legal {
     height: 20px;
   }
 
-  .content h2 {
+  .container h2.heading {
     font-size: 2.5rem;
   }
-
-  .container .heading {
-    font-size: 2.5rem;
-  } 
 
   .heading i {
     font-size: 1.8rem;
@@ -719,6 +710,7 @@ footer .legal {
   .deals a {
     font-size: 1.5rem;
   }
+
   .company .name {
     font-size: 1.7rem;
   }
@@ -732,7 +724,7 @@ footer .legal {
   .amount h4 {
     font-size: 1.5rem;
   }
-  
+
   .amount p {
     font-size: 1.2rem;
   }
@@ -784,7 +776,7 @@ footer .legal {
     height: 140px;
   }
 
-  .list li {
+  .list .list-item {
     font-size: 1.4rem;
   }
 
@@ -821,14 +813,14 @@ footer .legal {
 
   .discount p {
     font-size: 1.2rem;
-    margin: 35px -15px 0px 26px;
+    margin: 35px -15px 0 26px;
   }
 
   .social i {
     font-size: 1.5rem;
   }
 
-  .social a {
+  .social .social-link {
     width: 65px;
     height: 65px;
     padding: 18px;
@@ -859,13 +851,13 @@ footer .legal {
   header #tab-logo {
     display: block;
     float: left;
-    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
     width: 106px;
     height: 80px;
     padding: 16px 20px;
   }
 
-  #tab-logo img {
+  .tab-logo img {
     margin-top: 16px;
   }
 
@@ -873,11 +865,11 @@ footer .legal {
     font-size: 0.79rem;
   }
 
-  .first-list li {  
+  .first-list li {
     padding-left: 8px;
   }
 
-  .second-list li {  
+  .second-list li {
     padding-left: 6px;
   }
 
@@ -916,7 +908,7 @@ footer .legal {
     font-size: 1.2rem;
   }
 
-  .article-aside {
+  .featured-articles .article-aside {
     height: 48.5%;
   }
 
@@ -962,21 +954,19 @@ footer .legal {
   }
 }
 
-
-
 /* Styles for mobile devices */
 
 @media only screen and (max-width: 768px) {
-  header #tab-logo,
-  .first-section,
-  .second-section,
-  .third-section {
+  header .tab-logo,
+  header .first-section,
+  header .second-section,
+  header .third-section {
     display: none;
   }
 
-  .mobile-nav {
+  header .mobile-nav {
     background-color: #fff;
-    box-shadow: 0 0 32px rgba(0,0,0,.15);
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -989,23 +979,23 @@ footer .legal {
   .mobile-nav #mobile-logo {
     display: block;
     float: left;
-    background: linear-gradient(to bottom right,#c09,#f42 85%);
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
     width: 106px;
     height: 48px;
     padding: 16px 20px;
-  }  
+  }
 
   .mobile-nav .nav-icons {
     display: flex;
   }
 
   .mobile-nav #menu-icon,
-  .mobile-nav #search-icon {
+  .mobile-nav .search-icon {
     border-left: 1px solid rgb(235, 231, 231);
     padding: 13px 16px;
   }
 
-  .mobile-nav #search-icon {
+  .mobile-nav .search-icon {
     color: #aaa;
   }
 
@@ -1043,25 +1033,25 @@ footer .legal {
   .container .latest-news {
     display: block;
   }
-  
+
   .latest-news .news {
     max-width: 100%;
     padding: 25px 12px;
   }
-  
+
   .news img {
     width: 75px;
     height: 75px;
     object-fit: cover;
     float: left;
   }
-  
+
   .news h3 {
     font-size: 1rem;
     font-weight: bold;
     margin: 0 0 0 90px;
   }
-  
+
   .news p {
     color: #aaa;
     font-size: 0.89rem;
@@ -1078,7 +1068,7 @@ footer .legal {
     display: block;
   }
 
-  .deals .link {
+  .deals .border {
     border: none;
   }
 
@@ -1107,25 +1097,25 @@ footer .legal {
   .deals-container .latest-image-container {
     display: block;
   }
-  
+
   .latest-image-container .latest-info {
     width: 100%;
     padding: 25px 12px;
   }
-  
+
   .latest-info .img {
     width: 75px;
     height: 75px;
     object-fit: cover;
     float: left;
   }
-  
+
   .latest-info .image-title {
     font-size: 1rem;
     font-weight: bold;
     margin: 0 0 0 90px;
   }
-  
+
   .latest-info .dollar {
     color: #aaa;
     font-size: 0.89rem;
@@ -1137,7 +1127,7 @@ footer .legal {
     display: none;
   }
 
-  .social a {
+  .social .social-link {
     width: 40px;
     height: 40px;
     padding: 8px;
@@ -1157,4 +1147,3 @@ footer .legal {
     margin: 0 auto;
   }
 }
-    
