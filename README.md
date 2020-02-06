@@ -31,7 +31,7 @@ Built with media queries to support all devices.
 
 ## Live Demo
 
-[Live Demo](https://rawcdn.githack.com/tirthajyoti-ghosh/Design-Teardown/82fc6e44bf6c2f373d7b322a4019812af4d62776/index.html)
+[Live Demo](https://rawcdn.githack.com/mbabaliiryn/Responsive_Designs/ea486382d26ef72fa48a95c358d15cdd82c9049a/index.html)
 
 ## 🤝 Contributing
 
