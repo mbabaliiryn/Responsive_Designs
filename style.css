@@ -920,6 +920,10 @@ footer .legal {
     height: 65%;
   }
 
+  .container .latest-funding {
+    margin-bottom: 40px;
+  }
+
   .latest-funding .funding-heading {
     display: block;
     margin-bottom: 10px;
@@ -943,6 +947,7 @@ footer .legal {
 
   .category-container .category {
     max-width: 50%;
+    padding-top: 70px;
   }
 
   .category .popular {
