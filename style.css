@@ -218,7 +218,7 @@ main .gradient.dark {
 
 main .container {
   margin: 0 auto;
-  max-width: 1192px;
+  max-width: 87%;
   padding: 0 20px;
 }
 
@@ -291,14 +291,15 @@ main .container {
 .deals .link {
   padding: 0 7px;
   color: #f42;
+  border-right: 1px solid #f42;
+}
+
+.deals .link:last-child {
+  border: none;
 }
 
 .deals .link:hover {
   color: black;
-}
-
-.deals .border {
-  border-right: 1px solid #f42;
 }
 
 .latest-funding .funding-container {
@@ -681,6 +682,10 @@ footer .legal {
     line-height: 100px;
   }
 
+  .content h2 {
+    font-size: 2rem;
+  }
+
   .content .author,
   .content .time {
     font-size: 1.2rem;
@@ -931,6 +936,17 @@ footer .legal {
 
   .funding-heading .deals {
     padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .deals .link:last-child {
+    border-right: 1px solid #f42;
+  }
+
+  .deals .link:first-child {
+    border: none;
   }
 
   .funding-heading .heading {
@@ -1066,12 +1082,17 @@ footer .legal {
 
   .funding-heading .deals {
     padding: 5px;
+    flex-direction: column-reverse;
   }
 
-  .deals a {
+  .deals .link {
     padding: 5px 7px;
-    display: block;
+    border: none;
   }
+
+    .deals .link:last-child {
+      border: none;
+    }
 
   .deals .border {
     border: none;
