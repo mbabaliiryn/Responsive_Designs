@@ -515,8 +515,8 @@ main .container {
   font-weight: bold;
 }
 
-.see-all .see-all-link {
-  padding: 0 7px;
+.deals-container .see-all {
+  padding: 12px;
   color: #f42;
 }
 
@@ -853,7 +853,7 @@ footer .legal {
 /* Styles for tablet devices/smaller desktop screens */
 
 @media only screen and (max-width: 1034px) {
-  header #tab-logo {
+  header .tab-logo {
     display: block;
     float: left;
     background: linear-gradient(to bottom right, #c09, #f42 85%);
@@ -878,12 +878,12 @@ footer .legal {
     padding-left: 6px;
   }
 
-  .third-list {
+  .second-section .third-list {
     padding: 14px;
     margin-left: 5px;
   }
 
-  .third-section {
+  header .third-section {
     padding: 5px 20px;
   }
 
